@@ -1,8 +1,10 @@
 package roguecat.starcharsheet;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ViewFlipper;
 
 public class ScreenMain extends Activity {
@@ -14,6 +16,12 @@ public class ScreenMain extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_main);
         viewFlipper = findViewById(R.id.viewflipper);
+    }
+
+    public void testButton (View view) {
+
+        Intent intent = new Intent(this, SkillsScreen.class);
+        startActivity(intent);
     }
 
     // Using the following method, we will handle all screen swaps.
