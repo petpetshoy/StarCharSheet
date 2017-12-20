@@ -1,623 +1,634 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#9e9e9e"
+    android:background="#cac5c5"
     android:fitsSystemWindows="true">
 
     <ViewFlipper
         android:id="@+id/viewflipper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </ViewFlipper>
-
-    <EditText
-        android:id="@+id/nameText"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="22dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textSize="12sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/classText"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="22dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Class/lvl"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/initText"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameText" />
-
-    <TextView
-        android:id="@+id/nameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/nameText"
-        app:layout_constraintEnd_toEndOf="@+id/nameText"
-        app:layout_constraintStart_toStartOf="@+id/nameText"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/classLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Class/Level"
-        app:layout_constraintEnd_toEndOf="@+id/classText"
-        app:layout_constraintStart_toStartOf="@+id/classText"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/speedText"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classText" />
-
-    <EditText
-        android:id="@+id/kacText"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="14"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/initText" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginStart="85dp"
-        android:text="Kac"
-        app:layout_constraintBottom_toTopOf="@+id/kacText"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="2dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="13"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText8"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/kacText"
-        app:layout_constraintTop_toBottomOf="@+id/eacLabel" />
-
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="22"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speedText" />
-
-    <TextView
-        android:id="@+id/eacLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="24dp"
-        android:text="Eac"
-        app:layout_constraintEnd_toStartOf="@+id/cmdLabel"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/staminaText" />
-
-    <TextView
-        android:id="@+id/cmdLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="95dp"
-        android:text="CMD"
-        app:layout_constraintBottom_toTopOf="@+id/editText8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/speedText" />
-
-    <EditText
-        android:id="@+id/hpText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="87dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="9"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/rpText"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/staminaText"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/staminaText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="12"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/initText"
-        app:layout_constraintTop_toBottomOf="@+id/nameText" />
-
-    <EditText
-        android:id="@+id/rpText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="5"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/speedText"
-        app:layout_constraintTop_toBottomOf="@+id/classText" />
-
-    <TextView
-        android:id="@+id/staminaLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginStart="8dp"
-        android:text="Stamina"
-        app:layout_constraintBottom_toTopOf="@+id/staminaText"
-        app:layout_constraintEnd_toEndOf="@+id/staminaText"
-        app:layout_constraintStart_toStartOf="@+id/staminaText" />
-
-    <TextView
-        android:id="@+id/resolveLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="RP"
-        app:layout_constraintBottom_toTopOf="@+id/rpText"
-        app:layout_constraintEnd_toEndOf="@+id/rpText"
-        app:layout_constraintStart_toStartOf="@+id/rpText" />
-
-    <TextView
-        android:id="@+id/hpLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginStart="2dp"
-        android:text="HP"
-        app:layout_constraintBottom_toTopOf="@+id/staminaText"
-        app:layout_constraintEnd_toStartOf="@+id/resolveLabel"
-        app:layout_constraintHorizontal_bias="0.24"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/staminaLabel" />
-
-    <TextView
-        android:id="@+id/strLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="230dp"
-        android:text="Str"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/dexLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Dex"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/strLabel" />
-
-    <TextView
-        android:id="@+id/conLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Con"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dexLabel" />
-
-    <TextView
-        android:id="@+id/intLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Int"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conLabel" />
-
-    <TextView
-        android:id="@+id/wisLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Wis"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intLabel" />
-
-    <TextView
-        android:id="@+id/chaLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Cha"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wisLabel" />
-
-    <EditText
-        android:id="@+id/strText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="213dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="10"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nameLabel" />
-
-    <EditText
-        android:id="@+id/dexText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="10"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/strText" />
-
-    <EditText
-        android:id="@+id/conText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="10"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intText" />
-
-    <EditText
-        android:id="@+id/intText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="10"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dexText" />
-
-    <EditText
-        android:id="@+id/wisText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="10"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conText" />
-
-    <EditText
-        android:id="@+id/chaText"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="10"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wisText" />
-
-    <TextView
-        android:id="@+id/strmodView"
-        android:layout_width="wrap_content"
-        android:layout_height="27dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/strText"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
-
-    <TextView
-        android:id="@+id/dexmodView"
-        android:layout_width="wrap_content"
-        android:layout_height="26dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="14dp"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/dexText"
-        app:layout_constraintTop_toBottomOf="@+id/strmodView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="14dp"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/intText"
-        app:layout_constraintTop_toBottomOf="@+id/dexmodView" />
-
-    <TextView
-        android:id="@+id/intmodView"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="14dp"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/conText"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/wismodView"
-        android:layout_width="wrap_content"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="14dp"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/wisText"
-        app:layout_constraintTop_toBottomOf="@+id/intmodView" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/chaText"
-        app:layout_constraintTop_toBottomOf="@+id/wismodView" />
-
-    <TextView
-        android:id="@+id/initLabel"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="35dp"
-        android:text="Init"
-        app:layout_constraintBottom_toTopOf="@+id/initText"
-        app:layout_constraintEnd_toStartOf="@+id/staminaLabel" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginStart="25dp"
-        android:text="Speed"
-        app:layout_constraintBottom_toTopOf="@+id/speedText"
-        app:layout_constraintStart_toEndOf="@+id/resolveLabel" />
-
-    <TextView
-        android:id="@+id/drLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="184dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="230dp"
-        android:text="DR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/strmodView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/resistanceLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
-        android:layout_marginTop="20dp"
-        android:text="Resistances"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/drLabel" />
-
-    <TextView
-        android:id="@+id/fortLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="198dp"
-        android:layout_marginTop="58dp"
-        android:text="Fort"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resistanceLabel" />
-
-    <TextView
-        android:id="@+id/refLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="184dp"
-        android:layout_marginTop="20dp"
-        android:text="Reflex"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fortLabel" />
-
-    <TextView
-        android:id="@+id/willLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="200dp"
-        android:layout_marginTop="20dp"
-        android:text="Will"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/refLabel" />
-
-    <EditText
-        android:id="@+id/drText"
-        android:layout_width="31dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="142dp"
-        android:layout_marginTop="220dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/fortText"
-        android:layout_width="31dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="142dp"
-        android:layout_marginTop="336dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/refText"
-        android:layout_width="31dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="142dp"
-        android:layout_marginTop="376dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/willText"
-        android:layout_width="31dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="142dp"
-        android:layout_marginTop="416dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/modLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="204dp"
-        android:text="Mod"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/resistanceText"
-        android:layout_width="195dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="290dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Electric: 5"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:onClick="testButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_media_ff" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mainConstraintLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#cac5c5">
+
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/classText"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Class/lvl"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/initText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Name"
+                app:layout_constraintBottom_toTopOf="@+id/nameText"
+                app:layout_constraintEnd_toEndOf="@+id/nameText"
+                app:layout_constraintStart_toStartOf="@+id/nameText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/classLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Class/Level"
+                app:layout_constraintEnd_toEndOf="@+id/classText"
+                app:layout_constraintStart_toStartOf="@+id/classText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/speedText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/classText" />
+
+            <EditText
+                android:id="@+id/kacText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="14"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/initText" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="85dp"
+                android:text="Kac"
+                app:layout_constraintBottom_toTopOf="@+id/kacText"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="13"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/editText8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kacText"
+                app:layout_constraintTop_toBottomOf="@+id/eacLabel" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="22"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/speedText" />
+
+            <TextView
+                android:id="@+id/eacLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="24dp"
+                android:text="Eac"
+                app:layout_constraintEnd_toStartOf="@+id/cmdLabel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/staminaText" />
+
+            <TextView
+                android:id="@+id/cmdLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="95dp"
+                android:text="CMD"
+                app:layout_constraintBottom_toTopOf="@+id/editText8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/speedText" />
+
+            <EditText
+                android:id="@+id/hpText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="87dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="9"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/rpText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/staminaText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/staminaText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="12"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/initText"
+                app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+            <EditText
+                android:id="@+id/rpText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/speedText"
+                app:layout_constraintTop_toBottomOf="@+id/classText" />
+
+            <TextView
+                android:id="@+id/staminaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="8dp"
+                android:text="Stamina"
+                app:layout_constraintBottom_toTopOf="@+id/staminaText"
+                app:layout_constraintEnd_toEndOf="@+id/staminaText"
+                app:layout_constraintStart_toStartOf="@+id/staminaText" />
+
+            <TextView
+                android:id="@+id/resolveLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="RP"
+                app:layout_constraintBottom_toTopOf="@+id/rpText"
+                app:layout_constraintEnd_toEndOf="@+id/rpText"
+                app:layout_constraintStart_toStartOf="@+id/rpText" />
+
+            <TextView
+                android:id="@+id/hpLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:text="HP"
+                app:layout_constraintBottom_toTopOf="@+id/staminaText"
+                app:layout_constraintEnd_toStartOf="@+id/resolveLabel"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/staminaLabel" />
+
+            <TextView
+                android:id="@+id/strLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="230dp"
+                android:text="Str"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dexLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Dex"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/strLabel" />
+
+            <TextView
+                android:id="@+id/conLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Con"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dexLabel" />
+
+            <TextView
+                android:id="@+id/intLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Int"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conLabel" />
+
+            <TextView
+                android:id="@+id/wisLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Wis"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intLabel" />
+
+            <TextView
+                android:id="@+id/chaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Cha"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wisLabel" />
+
+            <EditText
+                android:id="@+id/strText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="213dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nameLabel" />
+
+            <EditText
+                android:id="@+id/dexText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/strText" />
+
+            <EditText
+                android:id="@+id/conText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intText" />
+
+            <EditText
+                android:id="@+id/intText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dexText" />
+
+            <EditText
+                android:id="@+id/wisText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conText" />
+
+            <EditText
+                android:id="@+id/chaText"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wisText" />
+
+            <TextView
+                android:id="@+id/strmodView"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/strText"
+                app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+            <TextView
+                android:id="@+id/dexmodView"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/dexText"
+                app:layout_constraintTop_toBottomOf="@+id/strmodView" />
+
+            <TextView
+                android:id="@+id/conmodView"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/conText"
+                app:layout_constraintTop_toBottomOf="@+id/dexmodView" />
+
+            <TextView
+                android:id="@+id/intmodView"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/intText"
+                app:layout_constraintTop_toBottomOf="@+id/conmodView" />
+
+            <TextView
+                android:id="@+id/wismodView"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/wisText"
+                app:layout_constraintTop_toBottomOf="@+id/intmodView" />
+
+            <TextView
+                android:id="@+id/chamodView"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/chaText"
+                app:layout_constraintTop_toBottomOf="@+id/wismodView" />
+
+            <TextView
+                android:id="@+id/initLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="35dp"
+                android:text="Init"
+                app:layout_constraintBottom_toTopOf="@+id/initText"
+                app:layout_constraintEnd_toStartOf="@+id/staminaLabel" />
+
+            <TextView
+                android:id="@+id/speedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="25dp"
+                android:text="Speed"
+                app:layout_constraintBottom_toTopOf="@+id/speedText"
+                app:layout_constraintStart_toEndOf="@+id/resolveLabel" />
+
+            <TextView
+                android:id="@+id/drLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="184dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="230dp"
+                android:text="DR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.524"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/strmodView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/resistanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="148dp"
+                android:layout_marginTop="20dp"
+                android:text="Resistances"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drLabel" />
+
+            <TextView
+                android:id="@+id/fortLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="198dp"
+                android:layout_marginTop="58dp"
+                android:text="Fort"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resistanceLabel" />
+
+            <TextView
+                android:id="@+id/refLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="184dp"
+                android:layout_marginTop="20dp"
+                android:text="Reflex"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fortLabel" />
+
+            <TextView
+                android:id="@+id/willLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="200dp"
+                android:layout_marginTop="20dp"
+                android:text="Will"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/refLabel" />
+
+            <EditText
+                android:id="@+id/drText"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="142dp"
+                android:layout_marginTop="220dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/fortText"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="142dp"
+                android:layout_marginTop="336dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/refText"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="142dp"
+                android:layout_marginTop="376dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/willText"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="142dp"
+                android:layout_marginTop="416dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/modLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="204dp"
+                android:text="Mod"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/resistanceText"
+                android:layout_width="195dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="290dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Electric: 5"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:onClick="testButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@android:drawable/ic_media_ff" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ViewFlipper>
 
 </android.support.constraint.ConstraintLayout>
 
